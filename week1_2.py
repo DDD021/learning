@@ -1,0 +1,10 @@
+principal=3000
+rate=0.06
+year=2
+tax=80
+compound_value=principal*(1+rate)**year-tax
+profit=compound_value-principal
+new_rate=profit/principal
+print(round(compound_value,2))
+print(round(profit,2))
+print(round(new_rate*100,2),"%")
