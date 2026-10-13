@@ -1,0 +1,10 @@
+principal=int(input("本金"))
+rate=float(input("利率"))/100
+year=int(input("年份"))
+tax=int(input("手续费"))
+compound_value=principal*(1+rate)**year-tax
+profit=compound_value-principal
+new_rate=profit/principal
+print(round(compound_value,2))
+print(round(profit,2))
+print(round(new_rate*100,2),"%")
